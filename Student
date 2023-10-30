@@ -1,0 +1,43 @@
+package srs;
+
+/**
+ *
+ * @author raquel.santos
+ */
+import java.util.ArrayList;
+import java.util.Collection;
+
+
+public class Student extends Person{
+    private String major;
+    private String degree;
+    private Transcript trabscript;
+    ArrayList<Section> attends;
+    
+    
+    public Student(String name, String ssn, String major, String degree){
+        super (name, ssn);
+        
+        this.setMajor(major);
+        this.setDegree(degree);
+        
+        this.setTranscript(new Transcript(this));
+        
+        attends = new ArrayList<Section>();
+    }
+    public Student(String ssn){
+        this("TBD", ssn, "TBD", "TBD");
+    }
+    public void setMajor(String major){
+        this.major = major;
+    }
+    public String getMajor(){
+        return major;
+    }
+    public void setDegree(String degree){
+        this.degree = degree;
+    }
+    public String getDegree(){
+        return degree;
+    }
+}
