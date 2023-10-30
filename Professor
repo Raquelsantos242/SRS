@@ -7,7 +7,7 @@ package srs;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Professor {
+public class Professor extends Person{
     private String title;
     private String department;
     private ArrayList<Section> teaches;
