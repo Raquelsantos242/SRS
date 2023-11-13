@@ -25,8 +25,7 @@ public class Section {
 	private HashMap<Student, TranscriptEntry> assignedGrades; 
 	
 	
-	public Section(int sNo, char day, String time, Course course,
-		       String room, int capacity) {
+	public Section(int sNo, char day, String time, Course course, String room, int capacity) {
 		setSectionNo(sNo);
 		setDayOfWeek(day);
 		setTimeOfDay(time);
